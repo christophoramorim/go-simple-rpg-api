@@ -1,0 +1,40 @@
+POST http://localhost:8080/player HTTP/1.1
+content-type: application/json
+
+{
+    "nickname": "TheClip",
+    "life": 10,
+    "attack": 2
+}
+
+###
+GET http://localhost:8080/player HTTP/1.1
+content-type: application/json
+
+{
+}
+
+###
+
+DELETE http://localhost:8080/player/TheClip HTTP/1.1
+content-type: application/json
+
+{
+}
+
+###
+
+GET http://localhost:8080/player/TheClip HTTP/1.1
+content-type: application/json
+
+{
+}
+
+###
+
+PUT http://localhost:8080/player/TheClip HTTP/1.1
+content-type: application/json
+
+{
+    "nickname": "TheClipBR"
+}
